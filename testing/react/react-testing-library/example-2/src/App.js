@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import User from "./User";
 import DifferentElements from "./DifferentElements";
+import Counter from "./Counter";
 
 const App = () => {
     const [user, setUser] = useState(null);
@@ -20,6 +21,7 @@ const App = () => {
       <>
           <DifferentElements />
           {user ? <User user={user} /> : <span>Loading...</span>}
+          <Counter/>
       </>
   );
 };

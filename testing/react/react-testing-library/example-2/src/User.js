@@ -3,7 +3,8 @@ const User = ({user}) => {
 
 	return (
 		<div className="person">
-			<h2>Name: {name}</h2>
+            <h1>Api call:</h1>
+			<h3>Name: {name}</h3>
 			<h3>Email: {email}</h3>
 		</div>
 	);

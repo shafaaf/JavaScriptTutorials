@@ -7,4 +7,4 @@ From: https://academind.com/tutorials/testing-react-apps/
 - Simulating User Interactions
 - Testing Callbacks
 
-TODO: From Simulating User Interactions onwards
+TODO: Only the Testing Callbacks section
