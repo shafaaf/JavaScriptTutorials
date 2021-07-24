@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import User from "./User";
+import DifferentElements from "./DifferentElements";
 
 const App = () => {
     const [user, setUser] = useState(null);
@@ -17,23 +18,8 @@ const App = () => {
     }
     return (
       <>
-          <h1>Hello World</h1>
-          <span data-testid="mySpan">this is a span</span>
-          <ul className="animals">
-              <li>Cat</li>
-              <li>Whale</li>
-              <li>Lion</li>
-              <li>elephant</li>
-              <li>Rhino</li>
-          </ul>
-
-          <ul className="pets">
-              <li>dog</li>
-          </ul>
-
-          <div>
-              {user ? <User user={user} /> : <span>Loading...</span>}
-          </div>
+          <DifferentElements />
+          {user ? <User user={user} /> : <span>Loading...</span>}
       </>
   );
 };

@@ -1,4 +1,4 @@
-import {getByText, render, screen, waitForElementToBeRemoved} from '@testing-library/react';
+import {render, screen, waitForElementToBeRemoved} from '@testing-library/react';
 import App from './App';
 describe('Testing App Component', () => {
 
