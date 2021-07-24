@@ -1,5 +1,6 @@
 import {render, screen, waitForElementToBeRemoved} from '@testing-library/react';
 import App from './App';
+
 describe('Testing user api calls', () => {
 
   test('loading text is shown while API request is in progress', async () => {

@@ -1,6 +1,6 @@
-import {render, screen, waitForElementToBeRemoved} from '@testing-library/react';
-
+import {render, screen} from '@testing-library/react';
 import App from './App';
+
 describe('Testing DifferentElements', () => {
 
     test('render h1 element', () => {

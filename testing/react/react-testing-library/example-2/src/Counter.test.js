@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import UserEvent from '@testing-library/user-event';
 import App from './App';
 
-describe('Testing App Component', () => {
+describe('Testing user simulated actions using Counter component', () => {
 
     test('counter is incremented on increment button click', () => {
         render(<App />);
