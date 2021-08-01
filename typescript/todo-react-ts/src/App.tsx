@@ -2,13 +2,16 @@ import React, {useState} from 'react';
 import {TodoList} from "./TodoList";
 import {AddTodoForm} from "./AddTodoForm";
 
+// Do not need to add in type below
 const initialTodos: Array<Todo> = [
     {text: "feed the cats", complete: true},
     {text: "write app", complete: false},
 ];
 
 const App: React.FC = () => {
-    const [todos, setTodos] = useState(initialTodos);
+    const [todos, setTodos] = useState<Todo[]>(initialTodos);
+    // can also do:
+    // const [todos, setTodos] = useState<Todo[]>(initialTodos);
 
     const toggleTodo: ToggleTodo = (selectedTodo) => {
             const newTodos = todos.map(todo => {
@@ -30,10 +33,10 @@ const App: React.FC = () => {
     };
 
     return (
-      <React.Fragment>
+      <>
           <TodoList todos = {todos} toggleTodo = {toggleTodo}/>
           <AddTodoForm addTodo = {addTodo}/>
-      </React.Fragment>
+      </>
   );
 };
 
