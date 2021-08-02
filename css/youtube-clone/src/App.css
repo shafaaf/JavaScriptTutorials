@@ -62,8 +62,8 @@ body {
 .channel-icon {
     margin-right: 0.75rem;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     background-color: grey; /* Show grey box which shows up when loading */
 }
 
