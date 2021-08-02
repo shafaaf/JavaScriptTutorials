@@ -1,14 +1,19 @@
 import './App.css';
 
 const App = () => {
-    const array1 = [1, 4, 9, 16];
+    const N = 22;
+    const videos = [...Array(N+1).keys()].slice(1);
+
+
+    const M = 2;
+    const videosTypes = [...Array(M+1).keys()].slice(1);
 
     const getRandomInt = max => Math.floor(Math.random() * max);
 
     return (
         <div className="videos">
             <section className="video-section">
-                {array1.map((value, index) => (
+                {videos.map((value, index) => (
                     <article className="video-container">
                         <a href="#" className="thumbnail" data-duration="12:24">
                             <img
