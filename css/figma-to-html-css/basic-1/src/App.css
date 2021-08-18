@@ -1,0 +1,75 @@
+:root {
+    --clr-primary: #12e7c0;
+    --clr-graylight: #f3f3f3;
+    --clr-graymed: #c4c4c4;
+    --border-radius: 0.5rem;
+}
+
+/* To apply universally */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: var(--clr-graylight);
+}
+
+/* Have some breathing room on the main content from edges */
+main {
+    margin: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Will hold all the cards */
+.wrapper {
+    counter-reset: number;
+    display: flex;
+    /* widths of the cards remain fixed, wont change on less screen size, if less space, new line */
+    /* Imp: really good to achieve responsiveness */
+    flex-wrap: wrap;
+    justify-content: center; /* All cards will be at the center */
+    margin: 4rem 0;
+    /*row-gap: 2rem;*/
+}
+
+/* each card */
+.container {
+    box-shadow: 0px 0px 20px var(--clr-graymed);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    width: 300px; /* Dont want these to stretch as screen grows and so fixed */
+    margin: 0 0.5rem 4rem; /* Breathing room between reach of them */
+    background: white;
+    text-align: center;
+    /* want number circles which appear with position absolute above this,
+    and so will need to be in reference to this container */
+    position: relative;
+}
+
+/* Green numbered circle */
+.container::before {
+    counter-increment: number; /* Increment number by 1 */
+    content: counter(number);
+    width: 4rem;
+    height: 4rem;
+    background: var(--clr-primary);
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: -2rem;
+    left: 7.4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.title {
+    margin: 2rem 0 1rem 0;
+}
