@@ -2,6 +2,10 @@
   font-family: "Bangla MN";
 }
 
+.searchBox {
+  display: none;
+}
+
 // most copy pasted except width
 // full navbar
 .navContainer {
@@ -19,8 +23,36 @@
   display: flex;
   align-items: center;
   justify-content: space-between; /* Used this to move left item most left of container, and rest stuff to most right */
+  height: 72px;
 }
 
-.nav {
+.navLogo {
+  /* Unsure why width, height set for these automatically */
+  //width: 67px;
+  //height: 96px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 96px;
+  color: #021718;
+}
 
+.navUnorderedList {
+  display: flex;
+}
+
+.navListItems {
+  list-style: none;
+  margin-right: 100px;
+}
+
+.navListItemsLinks {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #021718;
+  text-decoration: none;
 }

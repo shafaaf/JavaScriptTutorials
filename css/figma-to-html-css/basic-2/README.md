@@ -2,7 +2,7 @@
 
 Uses Sass
 
-TODO: From 03:28
+TODO: From 06:25
 
 From: https://www.youtube.com/watch?v=q_YNq0j_QfE&ab_channel=GTCoding
 

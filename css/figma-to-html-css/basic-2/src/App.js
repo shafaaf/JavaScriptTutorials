@@ -10,25 +10,25 @@ import dribble from './images/dribble.png';
 
 const App = () => (
     <div className={styles.mainBody}>
-        <div className="search-box">
+        <div className={styles.searchBox}>
             <input type="text" placeholder="Search here..."/>
         </div>
 
         <div className={styles.navContainer}>
             <div className={styles.wrapper}>
-                <div className="logo">D.</div>
-                <ul className="nav-items">
-                    <li>
-                        <a href="#">blog</a>
+                <div className={styles.navLogo}>D.</div>
+                <ul className={styles.navUnorderedList}>
+                    <li className={styles.navListItems}>
+                        <a className={styles.navListItemsLinks} href="#">blog</a>
                     </li>
-                    <li>
-                        <a href="#">contact</a>
+                    <li className={styles.navListItems}>
+                        <a className={styles.navListItemsLinks} href="#">contact</a>
                     </li>
-                    <li>
-                        <a href="#">about</a>
+                    <li className={styles.navListItems}>
+                        <a className={styles.navListItemsLinks} href="#">about</a>
                     </li>
-                    <li>
-                        <a className="nav-btn-container" href="#">
+                    <li className={styles.navListItems}>
+                        <a href="#">
                             <SearchIcon className="search-btn"/>
                             <CloseIcon className="close-btn"/>
                         </a>
@@ -39,7 +39,6 @@ const App = () => (
 
         <div className="header-container">
             <div className="wrapper">
-
                 <div className="hero-content">
                     <h1>Hi, I’m Darlene</h1>
                     <p>
