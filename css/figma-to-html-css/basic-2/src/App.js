@@ -38,36 +38,38 @@ const App = () => (
         </div>
 
         <div className={styles.mainContentContainer}>
-            <div className="mainContent">
-                <div className="hero-content">
-                    <h1>Hi, I’m Darlene</h1>
-                    <p>
+            <div className={styles.authorContent}>
+                <div>
+                    <h1 className={styles.authorHeader}>Hi, I’m Darlene</h1>
+                    <p className={styles.authorPara}>
                         I design beautiful websites & mobile apps that modern trends
                         demand
                     </p>
-                    <a href="#">
+                    <button className={styles.authorContact}>
                         Contact Me
-                    </a>
+                    </button>
                 </div>
-
                 <div className="hero-image">
                     <img src={photo} alt="photo"/>
                     <div className="photo-bg"></div>
                 </div>
-
-                <div className="social-icons">
-                    <a href="#">
-                        <img src={instagram} alt="instagram"/>
-                    </a>
-                    <a href="#">
-                        <img src={behance} alt="behance"/>
-                    </a>
-                    <a href="#">
-                        <img src={dribble} alt="dribble"/>
-                    </a>
-                </div>
             </div>
+
+            <div className="social-icons">
+                <a href="#">
+                    <img src={instagram} alt="instagram"/>
+                </a>
+                <a href="#">
+                    <img src={behance} alt="behance"/>
+                </a>
+                <a href="#">
+                    <img src={dribble} alt="dribble"/>
+                </a>
+            </div>
+
         </div>
+
+
     </div>
 );
 

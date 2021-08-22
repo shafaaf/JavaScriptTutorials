@@ -60,7 +60,57 @@
 }
 
 // mainContentContainer area
-
 .mainContentContainer {
   background-color: #F5A05C;
+  background-image: url("images/bg-shape.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: calc(100vh - 72px);
+
+}
+
+.authorContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 80px;
+  margin-left: 230px;
+  margin-right: 200px;
+}
+
+.authorHeader {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  color: #021718;
+  margin-bottom: 24px;
+}
+
+.authorPara {
+  width: 418px;
+  height: 84px; // Need width here
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 42px;
+  color: #021718;
+  margin-bottom: 14px;
+}
+
+.authorContact {
+  width: 196px;
+  height: 60px;
+  background: #01847F;
+  border-radius: 8px;
+
+  font-family: "Didot";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 42px;
+  color: #FFFFFA;
 }
