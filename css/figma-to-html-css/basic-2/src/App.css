@@ -1,0 +1,5 @@
+
+* {
+    box-sizing: border-box; /* so that height and width of all elements will be just as we want */
+    margin: 0;
+}

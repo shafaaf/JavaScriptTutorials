@@ -1,0 +1,26 @@
+.mainBody {
+  font-family: "Bangla MN";
+}
+
+// most copy pasted except width
+// full navbar
+.navContainer {
+  //width: 1440px;
+  height: 72px;
+  background: #FFFFFA;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+// only the inner content from D to search bar area. Width get from rectangle selection
+.wrapper {
+  max-width: 1200px;
+  border: 1px solid red;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Used this to move left item most left of container, and rest stuff to most right */
+}
+
+.nav {
+
+}
