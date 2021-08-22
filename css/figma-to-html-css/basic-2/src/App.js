@@ -9,7 +9,7 @@ import behance from './images/behance.png';
 import dribble from './images/dribble.png';
 
 const App = () => (
-    <div className={styles.mainBody}>
+    <div className={styles.fullContainer}>
         <div className={styles.searchBox}>
             <input type="text" placeholder="Search here..."/>
         </div>
@@ -25,20 +25,20 @@ const App = () => (
                         <a className={styles.navListItemsLinks} href="#">contact</a>
                     </li>
                     <li className={styles.navListItems}>
-                        <a className={styles.navListItemsLinks} href="#">about</a>
+                        <p className={styles.navListItemsLinks} href="#">about</p>
                     </li>
                     <li className={styles.navListItems}>
-                        <a href="#">
-                            <SearchIcon className="search-btn"/>
-                            <CloseIcon className="close-btn"/>
+                        <a className={styles.navListItemsLinks} href="#">
+                            <SearchIcon />
+                            <CloseIcon />
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div className="header-container">
-            <div className="wrapper">
+        <div className={styles.mainContentContainer}>
+            <div className="mainContent">
                 <div className="hero-content">
                     <h1>Hi, I’m Darlene</h1>
                     <p>

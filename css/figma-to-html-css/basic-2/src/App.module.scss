@@ -1,5 +1,7 @@
-.mainBody {
-  font-family: "Bangla MN";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.fullContainer {
+  font-family: "Apple Chancery";
 }
 
 .searchBox {
@@ -30,7 +32,7 @@
   /* Unsure why width, height set for these automatically */
   //width: 67px;
   //height: 96px;
-  font-family: Poppins;
+  font-family: cursive;
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
@@ -48,11 +50,17 @@
 }
 
 .navListItemsLinks {
-  font-family: Poppins;
+  font-family: cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 36px;
   color: #021718;
   text-decoration: none;
+}
+
+// mainContentContainer area
+
+.mainContentContainer {
+  background-color: #F5A05C;
 }
