@@ -1,8 +1,6 @@
 # Basic 2
 
-Uses Sass
-
-TODO: From 11:48
+Uses Sass, CSS modules 
 
 From: https://www.youtube.com/watch?v=q_YNq0j_QfE&ab_channel=GTCoding
 

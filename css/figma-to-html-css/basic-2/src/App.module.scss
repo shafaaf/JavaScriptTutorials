@@ -20,7 +20,7 @@
 // only the inner content from D to search bar area. Width get from rectangle selection
 .wrapper {
   max-width: 1200px;
-  border: 1px solid red;
+  //border: 1px solid red;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -42,6 +42,7 @@
 
 .navUnorderedList {
   display: flex;
+  align-items: center;
 }
 
 .navListItems {
@@ -67,7 +68,9 @@
   background-position: right;
   background-size: contain;
   height: calc(100vh - 72px);
-
+  position: absolute;
+  z-index: -10;
+  width: 100vw;
 }
 
 .authorContent {
@@ -113,4 +116,45 @@
   font-size: 24px;
   line-height: 42px;
   color: #FFFFFA;
+  border: none;
+  transition: 300ms;
+}
+
+// To make button go up effect
+.authorContact:hover {
+  transform: translateY(-8px);
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center; // to center the Instagram button inplace
+}
+
+.socialIcon {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.heroImageParent {
+  position: relative;
+  transition: 300ms;
+}
+.heroImageParent:hover {
+  transform: rotate(-6deg);
+}
+
+.heroImage {
+  //position: absolute;
+}
+
+.heroImageBg {
+  position: absolute;
+  z-index: -12; // works because set background's z-index
+  width: 500px;
+  height: 500px;
+  top: 47px;
+  left: 21px;
+  background: #44A1A0;
+  transform: rotate(-5.47deg);
 }

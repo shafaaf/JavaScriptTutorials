@@ -1,5 +1,4 @@
 import {ReactComponent as SearchIcon} from './images/search-icon.svg';
-import {ReactComponent as CloseIcon} from './images/close-icon.svg';
 import styles from "./App.module.scss";
 import "./App.css";
 
@@ -29,8 +28,8 @@ const App = () => (
                     </li>
                     <li className={styles.navListItems}>
                         <a className={styles.navListItemsLinks} href="#">
-                            <SearchIcon />
-                            <CloseIcon />
+                            {/* TODO: Why manually doing this */}
+                            <SearchIcon style={{marginTop: "15px"}}/>
                         </a>
                     </li>
                 </ul>
@@ -49,20 +48,20 @@ const App = () => (
                         Contact Me
                     </button>
                 </div>
-                <div className="hero-image">
-                    <img src={photo} alt="photo"/>
-                    <div className="photo-bg"></div>
+                <div className={styles.heroImageParent}>
+                    <img className={styles.heroImage} src={photo} alt="photo"/>
+                    <div className={styles.heroImageBg}></div>
                 </div>
             </div>
 
-            <div className="social-icons">
-                <a href="#">
+            <div className={styles.socialIcons}>
+                <a className={styles.socialIcon} href="#">
                     <img src={instagram} alt="instagram"/>
                 </a>
-                <a href="#">
+                <a className={styles.socialIcon} href="#">
                     <img src={behance} alt="behance"/>
                 </a>
-                <a href="#">
+                <a className={styles.socialIcon} href="#">
                     <img src={dribble} alt="dribble"/>
                 </a>
             </div>
