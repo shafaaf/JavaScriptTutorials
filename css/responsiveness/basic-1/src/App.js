@@ -7,4 +7,4 @@ const App = () => (
 
 export default App;
 
-// Design for cellphone first
+// Design for cellphone firstz
