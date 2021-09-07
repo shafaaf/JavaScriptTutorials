@@ -1,5 +1,10 @@
 # React redux todo app
 
+Tutorial: https://www.youtube.com/watch?v=fiesH6WU63I&t=1437s&ab_channel=ChrisBlakely
+Code: https://github.com/chrisblakely01/react-redux-todo-app
+
+TODO: Did till 23:50
+
 Source code for React redux todo app YouTube tutorial. Includes
 
 - Finished source code
