@@ -17,7 +17,7 @@ const TodoItem = ({ id, title, completed }) => {
 		<li className={`list-group-item ${completed && 'list-group-item-success'}`}>
 			<div className='d-flex justify-content-between'>
 				<span className='d-flex align-items-center'>
-					<input type='checkbox' className='mr-3' checked={completed} onClick={handleCompleteClick}/>
+					<input type='checkbox' className='mr-3' defaultChecked={completed} onClick={handleCompleteClick}/>
 					{title}
 				</span>
 				<button className='btn btn-danger' onClick={handleDeleteClick}>Delete</button>

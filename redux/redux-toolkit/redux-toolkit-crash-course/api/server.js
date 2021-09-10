@@ -16,12 +16,12 @@ let todos = [
 	{
 		id: nanoid(),
 		title: 'todo 1',
-		completed: true,
+		completed: false,
 	},
 	{
 		id: nanoid(),
 		title: 'todo 2',
-		completed: false,
+		completed: true,
 	},
 	{
 		id: nanoid(),
