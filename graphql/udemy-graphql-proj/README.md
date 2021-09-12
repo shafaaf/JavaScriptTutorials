@@ -13,3 +13,12 @@ GraphQL UI:
 ```
 http://localhost:4000/graphql
 ```
+
+
+Example of mutations:
+mutation {
+    removeUser(id:"60d3ddd62c3c703516497616") {
+        id
+    }
+}
+
