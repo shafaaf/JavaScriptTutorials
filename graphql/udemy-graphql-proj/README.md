@@ -14,6 +14,16 @@ GraphQL UI:
 http://localhost:4000/graphql
 ```
 
+Example of query:
+query {
+    hobbies {
+        title
+        description
+        user {
+            name
+        }
+    }
+}
 
 Example of mutations:
 mutation {
