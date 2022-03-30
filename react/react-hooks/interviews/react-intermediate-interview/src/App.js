@@ -60,7 +60,6 @@ const App = () => {
         if (users.length === 0) {
             return null;
         }
-        // flattenLocations(users);
         return (
             <div>
                 {users.map((user, i) =>
@@ -70,11 +69,11 @@ const App = () => {
         );
     }
 
-    // const generateLocationTable = data => {
-        // console.log("data is: ", data);
-        // if (data == '') {
-        //     return <></>;
-        // }
+    const generateLocationTable = data => {
+        console.log("data is: ", data);
+        if (data.length == '') {
+            return <></>;
+        }
         // const elems = JSON.parse(data)["results"];
         // return (
         //     <table>
@@ -91,13 +90,13 @@ const App = () => {
         //         }
         //     </table>
         // );
-    // }
+    }
 
     return (
         <div className="App">
             <h1>Hello CodeSandbox</h1>
             <h2>Start editing to see something!</h2>
-            {/*{generateLocationTable(users)}*/}
+            {generateLocationTable(flattenedLocations)}
 
             {renderFullUserName(users)}
 
