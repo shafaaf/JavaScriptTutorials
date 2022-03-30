@@ -74,22 +74,32 @@ const App = () => {
         if (data.length == '') {
             return <></>;
         }
-        // const elems = JSON.parse(data)["results"];
-        // return (
-        //     <table>
-        //         <tr>
-        //             <th>Header1</th>
-        //             <th>Header</th>
-        //         </tr>
-        //         {
-        //             elems.map(elem =>
-        //                 <tr>
-        //                     <th>Month</th>
-        //                     <th>Savings</th>
-        //                 </tr>)
-        //         }
-        //     </table>
-        // );
+
+        return (
+            <table>
+                <tr>
+                    {
+                        Object.entries(data[0]).map(([key, value]) =>
+                            (
+                                <th>{key}</th>
+                            ))
+                    }
+                </tr>
+                {
+                    data.map(location =>
+                            <tr>
+                                {
+                                    Object.entries(location).map(([key, value]) =>
+                                        (
+                                            <th>{value}</th>
+                                        ))
+                                }
+                            </tr>
+                        )
+
+                }
+            </table>
+        );
     }
 
     return (
