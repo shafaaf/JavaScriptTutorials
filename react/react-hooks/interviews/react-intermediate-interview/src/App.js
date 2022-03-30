@@ -11,19 +11,19 @@ const App = () => {
         const locations = users.map((user, i) => ({
             ...user.location
         }));
-        // console.log("flattenLocations: locations is: ", locations);
-
+        console.log("flattenLocations: locations is: ", locations);
         const flattenedLocations = [];
         for (let location of locations) {
             const newLocationObj = {};
             for (let key of Object.keys(location)) {
-                console.log(key + " -> " + location[key])
                 const temp = location[key];
-                console.log("temp: ", temp);
                 if (typeof temp === 'object') {
-                    // for (let key2 of Object.keys(temp)) {
-                    //
-                    // }
+                    let str = '';
+                    for (let key2 of Object.keys(temp)) {
+                        str += `${key2}: ${temp[key2]}, `;
+                        str.slice(0, -1);
+                        newLocationObj[key] = str;
+                    }
                 } else {
                     newLocationObj[key] = location[key];
                 }
