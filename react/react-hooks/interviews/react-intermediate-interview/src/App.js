@@ -21,9 +21,10 @@ const App = () => {
                     let str = '';
                     for (let key2 of Object.keys(temp)) {
                         str += `${key2}: ${temp[key2]}, `;
-                        str.slice(0, -1);
-                        newLocationObj[key] = str;
+
                     }
+                    str = str.slice(0, -2);
+                    newLocationObj[key] = str;
                 } else {
                     newLocationObj[key] = location[key];
                 }
@@ -31,6 +32,7 @@ const App = () => {
             flattenedLocations.push(newLocationObj);
         }
         console.log("flattenLocations: flattenedLocations is: ", flattenedLocations);
+        setFlattenedLocations(flattenedLocations);
         return locations;
     }
 
@@ -47,7 +49,7 @@ const App = () => {
         .then((resp) => {
             console.log("resp is: ", resp);
             setUsers(resp.data.results);
-            setFlattenedLocations(flattenLocations(resp.data.results));
+            flattenLocations(resp.data.results);
         })
         .catch(console.error);
     }, []);
@@ -58,7 +60,7 @@ const App = () => {
         if (users.length === 0) {
             return null;
         }
-        flattenLocations(users);
+        // flattenLocations(users);
         return (
             <div>
                 {users.map((user, i) =>
